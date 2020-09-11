@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+- It solves the problem of having too much data to render on a website in a timely fashion. The state is always changing from user interactions so it wouldn't make sense to have to reload the whole page from one single tweet, instead React reacts to the change in state and renders only that change.
+
 1. Describe component state.
+
+- state is the object that stores property values that belong to the component.
 
 1. Describe props.
 
+- props is the object that allows passing of state to different components.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+- side effects are used to affect something outside of the scope of the function (like an axios.get call). If you want to run the useEffect once, you would put '[]' after the '}' and before the closing ')'. If you want to have it react to state or props you would add that element inside the '[]'.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

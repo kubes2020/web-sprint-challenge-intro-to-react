@@ -22,7 +22,7 @@ const App = () => {
       });
   }, []);
 
-  console.log("these are characters", characters);
+  // console.log("these are characters", characters);
 
   return (
     <div className="App">
