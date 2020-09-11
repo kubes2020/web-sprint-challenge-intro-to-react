@@ -26,7 +26,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">
+        Rick and Morty Characters
+        <br /> with Star Wars Background
+      </h1>
       {characters.map((char) => (
         <Character key={char.id} character={char} />
       ))}
