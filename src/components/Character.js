@@ -1,8 +1,22 @@
 // Write your Character component here
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const kf = keyframes`
+  70%{
+      opacity: .4
+
+    }
+  100%{
+    transform: scale(1);
+    opacity: 1
+  }
+`;
 
 const StyledCharacter = styled.h2`
+  transform: scale(0.1);
+  opacity: 0.1;
+  animation: ${kf} 1.5s forwards;
   color: #2c26a7;
   width: 100%;
   display: flex;
