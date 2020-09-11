@@ -28,10 +28,8 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {characters.map((char) => (
-        <Character key={char.id} character={char.name} />
+        <Character key={char.id} character={char} />
       ))}
-
-      {/* <Character characters={characters} /> */}
     </div>
   );
 };
